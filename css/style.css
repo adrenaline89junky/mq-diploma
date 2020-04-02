@@ -1,0 +1,892 @@
+/* ========== BODY ==========*/
+@font-face {
+    font-family: "opensans-regular";
+    src: url("../Fonts/OpenSans-Regular.woff");
+  }
+  
+  @font-face {
+    font-family: "opensans-bold";
+    src: url("../Fonts/OpenSans-Bold.woff");
+  }
+  
+  body {
+    font-family: opensans-regular, sans-serif;
+    margin: 0;
+  }
+  
+  /* ========== HEADER ==========*/
+  .page-header {
+    background-image: url("../Images/football_767.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .page-header::after {
+    content: "";
+    background-color: #19183a;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .header-container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .page-header-logo {
+    width: 132px;
+  }
+  
+  .page-header-title-1 {
+    display: flex;
+    margin-top: 130px;
+    font-family: opensans-bold;
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 31px;
+}
+  
+  .page-header-title-2 {
+    margin-bottom: 85px;
+    font-family: opensans-bold;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .download-button {
+    width: 280px;
+    height: 35px;
+    color: #ffffff;
+    font-size: 8px;
+    background-color: #5c3db1;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 17px;
+    cursor: pointer;
+    opacity: 0.8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 87px;
+    padding-right: 87px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .download-button:hover {
+    opacity: 1;
+  }
+
+  .apple-logo {
+    width: 20px;
+    fill: #ffffff;
+  }
+
+  .google-logo {
+    width: 20px;
+    fill: #ffffff;
+  }
+
+.text-button {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   margin-left: 10px;
+}
+
+  .button-text-2 {
+    font-family: opensans-bold;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  
+  /* ========== CONTENT WRAPPER ==========*/
+  .content-wrapper {
+    text-align: center;
+  }
+  
+  /* ========== MAIN ==========*/
+  .main-theme-title {
+    margin-top: 25px;
+  }
+  
+  .main-theme-link-athlets,
+  .main-theme-link-players {
+    display: flex;
+    color: #e3e3e3;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: opensans-bold;
+    font-size: 50px;
+  }
+  
+  .main-article-title-11,
+  .main-article-title-12,
+  .main-article-title-21,
+  .main-article-title-22,
+  .main-article-title-31,
+  .main-article-title-32 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .main-article-title-11,
+  .main-article-title-12 {
+    background-color: #fafafa;
+  }
+  
+  .main-article-title-21,
+  .main-article-title-22 {
+    background-color: #f4f3f7;
+  }
+  
+  .main-article-title-31 {
+    background-color: #5c3db1;
+    color: #e3e3e3;
+  }
+  
+  .main-article-title-32 {
+    background-color: #080933;
+    color: #e3e3e3;
+  }
+  
+  .main-article-header {
+    display: flex;
+    align-items: center;
+    padding-top: 56px;
+  }
+  
+  .number {
+    font-family: opensans-bold;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .number::after {
+    width: 15px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #5e42b0;
+    position: absolute;
+    display: block;
+    content: "";
+  }
+  
+  .number-31 {
+    color: #000000;
+    font-family: opensans-bold;
+    font-size: 14px;
+  }
+  
+  .number-31::after {
+    width: 15px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    display: block;
+    content: "";
+  }
+  
+  .number-32 {
+    color: #8b6be4;
+    font-family: opensans-bold;
+    font-size: 14px;
+  }
+  
+  .number-32::after {
+    width: 15px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    display: block;
+    content: "";
+  }
+  
+  .article-title {
+    margin: 0;
+  }
+  
+  .main-article-link {
+    color: #e3e3e3;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: opensans-bold;
+    font-size: 23px;
+  }
+  
+  .main-article-text {
+    text-align: start;
+    padding-bottom: 55px;
+    margin-top: 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 18px;
+  }
+  
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  /* ========== ASIDE ==========*/
+  .aside-theme-img {
+    font-size: 0;
+    position: relative;
+  }
+  
+  .aside-number {
+    background-color: #5c3eb2;
+    color: #ffffff;
+    position: absolute;
+    left: 20px;
+    margin-top: -90px;
+    padding: 27px;
+    font-family: opensans-bold;
+    font-size: 14px;
+  }
+  
+  .aside-number::after {
+    width: 15px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #8f7bc8;
+    position: absolute;
+    display: block;
+    content: "";
+  }
+  
+  .aside-theme-title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .aside-theme-link {
+    display: flex;
+    color: #e3e3e3;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: opensans-bold;
+    font-size: 28px;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .aside-theme-text {
+    text-align: start;
+    padding-bottom: 75px;
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+  
+  /* ========== FOOTER ==========*/
+  .page-footer {
+    background-image: url("../Images/game_767.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+  
+  .page-footer::after {
+    content: "";
+    background-color: #19183a;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .footer-container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .page-footer-logo-1 {
+    width: 56px;
+    fill: #ffffff;
+    background-color: #553ba2;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-radius: 25%;
+  }
+
+  .page-footer-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: opensans-bold;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-top: 55px;
+    margin-bottom: 0;
+  }
+  
+  .footer-text {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #9898be;
+    margin-bottom: 75px;
+  }
+  
+  .page-footer-logo-2 {
+    margin-top: 80px;
+    width: 132px;
+  }
+  
+  /* ========== MEDIA 641-960 ==========*/
+  @media (min-width: 641px) and (max-width: 960px) {
+    .page-header {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 35px;
+      padding-bottom: 92px;
+      background-image: url("../Images/football_1280.jpg");
+    }
+  
+    .page-header-logo {
+      width: 200px;
+    }
+
+    .page-header-title-1 {
+      margin-top: 170px;
+      margin-left: 60px;
+      font-size: 64px;
+      letter-spacing: 3px;
+      line-height: 31px;
+    }
+  
+    .page-header-title-2 {
+      display: flex;
+      margin-bottom: 305px;
+      margin-left: 170px;
+      font-size: 64px;
+      letter-spacing: 3px;
+      text-align: start;
+    }
+  
+    .form-group {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .download-button {
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 34px;
+      width: 311px;
+      height: 77px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-radius: 38px;
+      justify-content: center;
+      filter: drop-shadow(8px 13.856px 12px #0a0e34);
+      line-height: 1;
+    }
+  
+    .apple-logo {
+      width: 38px;
+    }
+
+    .google-logo {
+      width: 41px;
+    }
+    
+    .text-button {
+      margin-left: 30px;
+    }
+
+    .main-theme-athlets,
+    .main-theme-players {
+      position: relative;
+    }
+  
+    .main-theme-img-athlets {
+      position: absolute;
+      width: 45%;
+      max-width: 365px;
+      margin-left: -570px;
+      margin-top: -70px;
+    }
+  
+    .main-theme-img-players {
+      position: absolute;
+      width: 56.5%;
+      margin-top: -90px;
+    }
+  
+    .main-theme-link-athlets {
+      padding-left: 37%;
+      font-size: 80px;
+    }
+  
+    .main-article-title-11,
+    .main-article-title-21,
+    .main-article-title-31 {
+      padding-left: 37%;
+    }
+  
+    .main-article-header {
+      padding-top: 40px;
+    }
+  
+    .main-theme-link-players {
+      padding-right: 37%;
+      padding-left: 30px;
+      font-size: 80px;
+    }
+  
+    .main-article-title-12,
+    .main-article-title-22,
+    .main-article-title-32 {
+      padding-right: 37%;
+      padding-left: 30px;
+    }
+  
+    .main-article-title-11,
+    .main-article-title-12 {
+      background-color: #ffffff;
+    }
+  
+    .number,
+    .number-31,
+    .number-32 {
+      font-size: 18px;
+      letter-spacing: 1px;
+      position: relative;
+    }
+  
+    .number::after {
+      width: 19px;
+      height: 5px;
+      border-radius: 2px;
+      position: absolute;
+      display: block;
+      content: "";
+    }
+  
+    .number-31::after {
+      width: 19px;
+      height: 5px;
+      border-radius: 2px;
+      position: absolute;
+      display: block;
+      content: "";
+    }
+  
+    .number-32::after {
+      width: 19px;
+      height: 5px;
+      border-radius: 2px;
+      position: absolute;
+      display: block;
+      content: "";
+    }
+  
+    .main-article-link {
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+  
+    .main-article-text {
+      padding-bottom: 36px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 28px;
+    }
+  
+    .aside-theme-link {
+      margin-top: 80px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 80px;
+    }
+  
+    .aside-theme-text {
+      padding-bottom: 105px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 24px;
+      letter-spacing: 1px;
+      line-height: 28px;
+    }
+  
+    .aside-number {
+      font-size: 24px;
+      padding: 45px;
+      left: 30px;
+      margin-top: -180px;
+    }
+  
+    .aside-number::after {
+      width: 25px;
+      height: 5px;
+      border-radius: 2px;
+    }
+  
+    .page-footer {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 130px;
+      padding-bottom: 20px;
+      background-image: url("../Images/game_1280.jpg");
+    }
+  
+    .page-footer-logo-1 {
+      width: 100px;
+      padding-bottom: 28px;
+      padding-top: 28px;
+      padding-left: 16px;
+      padding-right: 16px;
+}
+
+    .page-footer-title {
+      margin-top: 80px;
+      font-size: 80px;
+      letter-spacing: 4px;
+    }
+  
+    .footer-text {
+      margin-bottom: 275px;
+      font-size: 36px;
+    }
+  
+    .page-footer-logo-2 {
+      margin-top: 50px;
+      width: 200px;
+    }
+  }
+  
+  /* ========== MEDIA 961 ==========*/
+  @media (min-width: 961px) {
+    .page-header {
+      padding-left: 8%;
+      padding-right: 8%;
+      padding-top: 40px;
+      padding-bottom: 108px;
+      background-image: url("../Images/football_1920.jpg");
+    }
+  
+    .page-header-logo {
+      opacity: 0.8;
+      width: 185px;
+    }
+  
+    .page-header-logo:hover {
+      opacity: 1;
+    }
+  
+    .page-header-title-1 {
+      font-size: 90px;
+      letter-spacing: 5px;
+      line-height: 31px;
+      margin-top: 290px;
+    }
+  
+    .page-header-title-2 {
+      font-size: 90px;
+      letter-spacing: 5px;
+      line-height: 100px;
+      text-align: end;
+      margin-bottom: 214px;
+    }
+  
+    .form-group {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .download-button {
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 34px;
+      width: 311px;
+      height: 77px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-radius: 38px;
+      justify-content: center;
+      filter: drop-shadow(8px 13.856px 12px #0a0e34);
+      line-height: 1;
+    }
+  
+    .apple-logo {
+      width: 40px;
+      }
+  
+    .google-logo {
+      width: 40px;
+      }
+
+    .main-theme-title {
+      margin-top: 112px;
+      margin-bottom: 0;
+    }
+  
+    .main-theme-athlets,
+    .main-theme-players {
+      position: relative;
+    }
+  
+    .main-theme-link-athlets {
+      padding-left: 50%;
+      padding-right: 8%;
+    }
+  
+    .main-theme-link-athlets:hover {
+      color: #5e42b0;
+      text-shadow: 1px 1px 2px black, 0 0 1em black;
+    }
+  
+    .main-theme-img-athlets {
+      position: absolute;
+      width: 50%;
+      max-width: 1130px;
+      margin-top: -120px;
+      margin-left: -700px;
+    }
+
+    .main-article-title-11,
+    .main-article-title-21,
+    .main-article-title-31 {
+      padding-left: 50%;
+      padding-right: 8%;
+    }
+  
+    .main-theme-link-players {
+      padding-left: 8%;
+      padding-right: 50%;
+    }
+  
+    .main-theme-link-players:hover {
+      color: #5e42b0;
+      text-shadow: 1px 1px 2px black, 0 0 1em black;
+    }
+  
+    .main-article-title-12,
+    .main-article-title-22,
+    .main-article-title-32 {
+      padding-left: 8%;
+      padding-right: 50%;
+    }
+  
+    .main-article-link:hover {
+      color: #5e42b0;
+      text-shadow: 1px 1px 2px black, 0 0 1em black;
+    }
+  
+    .main-theme-img-players {
+      position: absolute;
+      width: 60%;
+      max-width: 1712px;
+      height: 880px;
+      margin-top: -135px;
+      margin-left: 0;
+    }
+  
+    .main-theme-link-athlets,
+    .main-theme-link-players {
+      font-size: 80px;
+    }
+  
+    .number,
+    .number-31,
+    .number-32 {
+      font-size: 18px;
+    }
+  
+    .number::after {
+      width: 19px;
+      height: 5px;
+      border-radius: 2px;
+    }
+  
+    .number-31::after {
+      width: 19px;
+      height: 5px;
+      border-radius: 2px;
+    }
+  
+    .number-32::after {
+      width: 19px;
+      height: 5px;
+      border-radius: 2px;
+    }
+  
+    .main-article-link {
+      font-size: 36px;
+      letter-spacing: 2px;
+      line-height: 34px;
+      padding-top: 60px;
+    }
+  
+    .main-article-text {
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 28px;
+      padding-bottom: 60px;
+    }
+  
+    .aside-theme-article {
+      display: flex;
+      text-align: start;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .aside-theme-article:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  
+    .aside-theme-img {
+      width: 50%;
+      height: auto;
+    }
+  
+    .aside-theme-content-1 {
+      width: 50%;
+      padding-left: 5%;
+      padding-right: 8%;
+      box-sizing: border-box;
+    }
+  
+    .aside-number {
+      font-size: 24px;
+      line-height: 34px;
+      margin-top: 0;
+      left: 46.8%;
+    }
+  
+    .aside-number::after {
+      width: 24px;
+      height: 5px;
+      border-radius: 2px;
+    }
+  
+    .aside-theme-link {
+      font-size: calc(80px + 40 * (100vw - 1920px) / 1152);
+      margin-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 70px;
+    }
+  
+    .aside-theme-link:hover {
+      color: #5e42b0;
+      text-shadow: 1px 1px 2px black, 0 0 1em black;
+    }
+  
+    .aside-theme-text {
+      font-size: 24px;
+      letter-spacing: 1px;
+      line-height: 28px;
+      padding: 0;
+    }
+
+    .aside-theme-content-2 {
+      width: 50%;
+      box-sizing: border-box;
+      padding-left: 8%;
+      padding-right: 5%;
+    }
+  
+    .page-footer {
+      padding-left: 8%;
+      padding-right: 8%;
+      padding-top: 220px;
+      padding-bottom: 45px;
+      background-image: url("../Images/game_1920.jpg");
+    }
+  
+    .footer-head {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .page-footer-logo-1 {
+      opacity: 0.8;
+      width: 100px;
+      padding-bottom: 28px;
+      padding-top: 28px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-right: 38px;
+    }
+  
+    .page-footer-logo-1:hover {
+      opacity: 1;
+    }
+  
+    .footer-info {
+      text-align: start;
+    }
+  
+    .page-footer-title {
+      font-size: 80px;
+      letter-spacing: 4px;
+      line-height: 60px;
+      margin-bottom: 20px;
+      margin-top: 0;
+      padding-top: 23px;
+    }
+  
+    .footer-text {
+      font-size: 30px;
+      line-height: 34px;
+      margin-bottom: 160px;
+    }
+  
+    .page-footer-logo-2 {
+      margin-top: 250px;
+      opacity: 0.8;
+      width: 185px;
+    }
+  
+    .page-footer-logo-2:hover {
+      opacity: 1;
+    }
+  }
+  
