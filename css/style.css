@@ -51,19 +51,23 @@
   .page-header-logo {
     width: 132px;
   }
-  
+
+  h1 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 130px;
+    margin-bottom: 85px;
+  }
+
   .page-header-title-1 {
     display: flex;
-    margin-top: 130px;
     margin-bottom: 20px;
     font-family: opensans-bold;
     font-size: 28px;
     letter-spacing: 1px;
-    line-height: 31px;
 }
   
   .page-header-title-2 {
-    margin-bottom: 85px;
     margin-left: 45px;
     font-family: opensans-bold;
     font-size: 28px;
@@ -135,6 +139,10 @@
   .main-theme {
     margin-top: 25px;
   }
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   
   .title-athlets,
   .title-players {
@@ -150,6 +158,8 @@
   .main-article {
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 56px;
+    padding-bottom: 55px;
   }
   
   .main-article:nth-child(3n + 1) {
@@ -169,7 +179,6 @@
   .main-header {
     display: flex;
     align-items: center;
-    padding-top: 56px;
   }
   
   .number {
@@ -224,7 +233,6 @@
   
   .main-text {
     text-align: start;
-    padding-bottom: 55px;
     margin-top: 30px;
     font-size: 15px;
     letter-spacing: 1px;
@@ -348,9 +356,12 @@
     font-size: 14px;
     color: #9898be;
   }
-  
-  .page-footer-logo-2 {
+
+  .logo-bottom {
     margin-top: 80px;
+  }
+
+  .page-footer-logo-2 {
     width: 132px;
   }
   
@@ -367,23 +378,24 @@
     .page-header-logo {
       width: 200px;
     }
+    
+    h1 {
+      margin-top: 170px;
+      margin-bottom: 305px;
+    }
 
     .page-header-title-1 {
-      margin-top: 170px;
       margin-left: 60px;
       font-size: 64px;
       letter-spacing: 3px;
-      line-height: 31px;
     }
   
     .page-header-title-2 {
       display: flex;
-      margin-bottom: 305px;
       margin-left: 160px;
       font-size: 64px;
       letter-spacing: 3px;
       text-align: start;
-      line-height: 1;
     }
   
     .form-group {
@@ -418,6 +430,10 @@
       margin-left: 30px;
     }
 
+    .main-theme {
+      margin-top: 90px;
+    }
+
     .athlets,
     .players {
       position: relative;
@@ -425,16 +441,15 @@
   
     .img-athlets {
       position: absolute;
-      width: 45%;
       max-width: 365px;
-      margin-left: -570px;
-      margin-top: -70px;
+      left: -12vw;
+      top: 150px;
     }
   
     .img-players {
       position: absolute;
-      width: 56.5%;
-      margin-top: -90px;
+      top: 90px;
+      right: 0;
     }
   
     .title-athlets {
@@ -446,14 +461,16 @@
       padding-left: 37%;
     }
   
-    .main-header {
+    .main-article {
       padding-top: 40px;
+      padding-bottom: 36px;
     }
   
     .title-players {
       padding-right: 37%;
       padding-left: 30px;
       font-size: 80px;
+      margin-top: 90px;
     }
   
     .players .main-article {
@@ -493,7 +510,6 @@
     }
   
     .main-text {
-      padding-bottom: 36px;
       font-size: 16px;
       letter-spacing: 1px;
       line-height: 28px;
@@ -557,9 +573,12 @@
     .footer-text {
       font-size: 36px;
     }
+
+    .logo-bottom {
+      margin-top: 50px;
+    }
   
     .page-footer-logo-2 {
-      margin-top: 50px;
       width: 200px;
     }
   }
@@ -582,25 +601,26 @@
     .page-header-logo:hover {
       opacity: 1;
     }
+
+    h1 {
+      margin-top: 290px;
+      margin-bottom: 214px;
+    }
   
     .page-header-title-1 {
       font-size: 90px;
       letter-spacing: 5px;
-      line-height: 31px;
-      margin-top: 290px;
     }
   
     .page-header-title-2 {
       font-size: 90px;
       letter-spacing: 5px;
-      line-height: 100px;
       text-align: end;
-      margin-bottom: 214px;
     }
   
     .form-group {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
     }
   
     .download-button {
@@ -614,8 +634,14 @@
       padding-bottom: 15px;
       border-radius: 38px;
       justify-content: center;
+      margin-left: 0;
+      margin-right: 0;
       filter: drop-shadow(8px 13.856px 12px #0a0e34);
       line-height: 1;
+    }
+
+    .download-button:nth-child(even) {
+      margin-left: 50px;
     }
   
     .apple-logo {
@@ -633,21 +659,22 @@
     .players {
       position: relative;
     }
+
+    .athlets {
+      margin-top: 112px;
+    }
   
     .title-athlets {
       padding-left: 50%;
       padding-right: 8%;
-      margin-top: 112px;
       margin-bottom: 0;
       font-size: 80px;
     }
   
     .img-athlets {
       position: absolute;
-      width: 50%;
-      max-width: 1130px;
-      margin-top: -120px;
-      margin-left: -700px;
+      top: 0;
+      left: 0vw;
     }
   
     .athlets .main-article {
@@ -662,6 +689,10 @@
       margin-bottom: 60px;
       font-size: 80px;
     }
+
+    .main-article {
+      padding-bottom: 60px;
+    }
   
     .players .main-article {
       padding-left: 8%;
@@ -670,11 +701,8 @@
   
     .img-players {
       position: absolute;
-      width: 60%;
-      max-width: 1712px;
-      height: 880px;
-      margin-top: -135px;
-      margin-left: 0;
+      top: 0;
+      right: 0vw;
     }
   
     .number,
@@ -698,14 +726,12 @@
     .article-title {
       font-size: 36px;
       letter-spacing: 2px;
-      line-height: 34px;
     }
   
     .main-text {
       font-size: 20px;
       letter-spacing: 1px;
       line-height: 28px;
-      padding-bottom: 60px;
     }
   
     .activity-article {
@@ -733,7 +759,6 @@
   
     .activity-number {
       font-size: 24px;
-      line-height: 34px;
       margin-top: 0;
       padding: 3vw;
       left: 45.5vw;
@@ -778,6 +803,7 @@
     .footer-head {
       display: flex;
       justify-content: center;
+      align-items: center;
       margin-bottom: 160px;
     }
    
@@ -800,24 +826,24 @@
   
     .footer-info {
       text-align: start;
+      margin-bottom: 23px;
     }
   
     .page-footer-title {
       font-size: 80px;
       letter-spacing: 4px;
-      line-height: 60px;
-      margin-bottom: 20px;
       margin-top: 0;
-      padding-top: 23px;
     }
   
     .footer-text {
       font-size: 30px;
-      line-height: 34px;
+    }
+
+    .logo-bottom {
+      margin-top: 250px;
     }
   
     .page-footer-logo-2 {
-      margin-top: 250px;
       opacity: 0.8;
       width: 185px;
     }
