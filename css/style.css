@@ -52,7 +52,7 @@
     width: 132px;
   }
 
-  h1 {
+  .page-header-title {
     margin-left: 0;
     margin-right: 0;
     margin-top: 130px;
@@ -97,6 +97,10 @@
     display: flex;
     align-items: center;
   }
+
+  .download-button:nth-child(even) {
+    margin-bottom: 0;
+  }
   
   .download-button:hover {
     opacity: 1;
@@ -136,16 +140,10 @@
   }
   
   /* ========== MAIN ==========*/
-  .main-theme {
-    margin-top: 25px;
-  }
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
   .title-athlets,
   .title-players {
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     color: #e3e3e3;
     text-transform: uppercase;
@@ -237,26 +235,35 @@
     font-size: 15px;
     letter-spacing: 1px;
     line-height: 18px;
+    margin-bottom: 0;
   }
-  
+
   p {
     margin-bottom: 0;
     margin-top: 0;
   }
   
-  
   /* ========== ACTIVITY ==========*/
+  .activity-article {
+    margin-bottom: 75px;
+  }
+
   .activity-img {
     font-size: 0;
     position: relative;
   }
   
+  .activity-content-1, 
+  .activity-content-2 {
+    position: relative;
+  }
+
   .activity-number {
     background-color: #5c3eb2;
     color: #ffffff;
     position: absolute;
     left: 20px;
-    margin-top: -90px;
+    top: -90px;
     padding: 27px;
     font-family: opensans-bold;
     font-size: 14px;
@@ -279,15 +286,12 @@
     text-decoration: none;
     font-family: opensans-bold;
     font-size: 28px;
-    margin-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
   }
   
   .activity-text {
     text-align: start;
-    padding-bottom: 75px;
-    padding-top: 24px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 16px;
@@ -341,13 +345,16 @@
     border-radius: 25%;
   }
 
+  .footer-info {
+    margin-top: 55px;
+  }
+
   .page-footer-title {
     color: #ffffff;
     text-transform: uppercase;
     font-family: opensans-bold;
     font-size: 32px;
     letter-spacing: 2px;
-    margin-top: 55px;
     margin-bottom: 0;
   }
   
@@ -379,7 +386,7 @@
       width: 200px;
     }
     
-    h1 {
+    .page-header-title {
       margin-top: 170px;
       margin-bottom: 305px;
     }
@@ -412,6 +419,7 @@
       padding-right: 0;
       padding-top: 15px;
       padding-bottom: 15px;
+      margin-bottom: 0;
       border-radius: 38px;
       justify-content: center;
       filter: drop-shadow(8px 13.856px 12px #0a0e34);
@@ -437,6 +445,7 @@
     .athlets,
     .players {
       position: relative;
+      overflow: hidden;
     }
   
     .img-athlets {
@@ -449,7 +458,7 @@
     .img-players {
       position: absolute;
       top: 90px;
-      right: 0;
+      left: 55vw;
     }
   
     .title-athlets {
@@ -514,16 +523,18 @@
       letter-spacing: 1px;
       line-height: 28px;
     }
+
+    .activity-article {
+      margin-bottom: 105px;
+    }
   
-    .activity-title {
-      margin-top: 80px;
+    .activity-title {      
       padding-left: 30px;
       padding-right: 30px;
       font-size: 80px;
     }
   
     .activity-text {
-      padding-bottom: 105px;
       padding-left: 30px;
       padding-right: 30px;
       font-size: 24px;
@@ -535,7 +546,7 @@
       font-size: 24px;
       padding: 45px;
       left: 30px;
-      margin-top: -180px;
+      top: -190px;
     }
   
     .activity-number::after {
@@ -562,10 +573,13 @@
       padding-top: 28px;
       padding-left: 16px;
       padding-right: 16px;
-}
+    }
+
+    .footer-info {
+      margin-top: 80px;
+    }
 
     .page-footer-title {
-      margin-top: 80px;
       font-size: 80px;
       letter-spacing: 4px;
     }
@@ -602,7 +616,7 @@
       opacity: 1;
     }
 
-    h1 {
+    .page-header-title {
       margin-top: 290px;
       margin-bottom: 214px;
     }
@@ -636,6 +650,7 @@
       justify-content: center;
       margin-left: 0;
       margin-right: 0;
+      margin-bottom: 0;
       filter: drop-shadow(8px 13.856px 12px #0a0e34);
       line-height: 1;
     }
@@ -661,7 +676,7 @@
     }
 
     .athlets {
-      margin-top: 112px;
+      padding-top: 112px;
     }
   
     .title-athlets {
@@ -673,7 +688,7 @@
   
     .img-athlets {
       position: absolute;
-      top: 0;
+      top: 120px;
       left: 0vw;
     }
   
@@ -681,11 +696,16 @@
       padding-left: 50%;
       padding-right: 8%;
     }
+
+    .players {
+      padding-top: 112px;
+      overflow: hidden;
+    }
   
     .title-players {
       padding-left: 8%;
       padding-right: 50%;
-      margin-top: 112px;
+      margin-top: 0;
       margin-bottom: 60px;
       font-size: 80px;
     }
@@ -701,8 +721,8 @@
   
     .img-players {
       position: absolute;
-      top: 0;
-      right: 0vw;
+      top: 120px;
+      left: 45vw;
     }
   
     .number,
@@ -739,6 +759,7 @@
       text-align: start;
       align-items: center;
       justify-content: center;
+      margin-bottom: 0;
     }
   
     .activity-article:nth-child(even) {
@@ -759,8 +780,15 @@
   
     .activity-number {
       font-size: 24px;
-      margin-top: 0;
+      top: 0;
       padding: 3vw;
+    }
+
+    .activity-content-1 .activity-number {
+      left: -4vw;
+    }
+
+    .activity-content-2 .activity-number {
       left: 45.5vw;
     }
   
@@ -769,7 +797,7 @@
       height: 5px;
       border-radius: 2px;
     }
-  
+
     .activity-title {
       font-size: calc(80px + 40 * (100vw - 1920px) / 1152);
       margin-top: 0;
@@ -827,6 +855,7 @@
     .footer-info {
       text-align: start;
       margin-bottom: 23px;
+      margin-top: 0;
     }
   
     .page-footer-title {
